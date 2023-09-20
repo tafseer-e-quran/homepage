@@ -1,0 +1,285 @@
+::selection{
+	color: white;
+	background-color: greenyellow;
+}
+
+body{
+	margin: 0;
+	background-color: #dedede;
+	font-family: Verdana, sans-serif; margin:0
+}
+
+* {box-sizing: border-box}
+
+/*Navigation Bar
+.hnavbar{
+	background-color: transparent;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: auto;
+}
+
+.hnav{
+	float: left;
+}
+
+.hnavbtn{
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 25px 25px;
+	transition: 0.4s;
+	background-color: crimson;
+	margin: 0 2px;
+}
+
+.hnavbtn:hover{
+	text-decoration: underline;
+	text-shadow: 4px 4px 14px #d9d9d9;
+	background-color: dodgerblue;
+	font-size: 17px;
+	text-shadow: 5px 5px 15px black;
+}
+/*Navigation Bar*/
+
+/*Heading*/
+
+.logo{
+	padding: 15px 25px;
+	font-size: 35px;
+	font-weight: bold;
+	color: white;
+	background-color: #001F3F;
+	text-shadow: 1px 1px 1px black;
+	text-align: center;
+}
+
+.logo01{
+	margin-top: 5px;
+	padding: 10px 15px;
+	font-size: 15px;
+	color: white;
+	background-color: dodgerblue;
+	text-align: center;
+	cursor: pointer;
+	text-shadow: 5px 5px 15px black;
+}
+
+.logo01:hover{
+	text-decoration: underline;
+	font-weight: bold;
+	text-shadow: 4px 4px 14px white;
+	background-color: crimson;
+	font-size: 17px;
+	text-shadow: 5px 5px 15px black;
+}
+
+/*Heading*/
+
+h1{
+	font-family: "Times New Roman", Times, serif;
+	text-align: center;
+	width: 50%;
+	margin: auto;
+	color: white;
+	background-color: #001F3F;
+	padding: 20px;
+	border-left: 5px solid darkblue;
+	border-right: 5px solid darkblue;
+	margin-top: 10px;
+}
+
+.description{
+	margin-bottom: 10px;
+	text-align: left;
+	margin: auto;
+	width: 95%;
+	background-color: rgba(115, 215, 21, 0.47);
+	border: 0.2px solid rgba(6, 63, 54, 0.9);
+	border-radius: 25px;
+	padding: 10px 20px;
+}
+
+/*Cards*/
+.gallery{
+	width: 98%;
+	margin: auto;
+}
+
+.card{
+	width: 31%;
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+	float: left;
+}
+
+.cardtxt{
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	color: green;
+}
+
+.cardover{
+	background-color: rgba(0, 128, 0, 0.5);
+	width: 100%;
+	height: 0;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	color: transparent;
+	transition: 0.4s linear;
+}
+
+.gobtn{
+	text-align: center;
+	color: transparent;
+	text-decoration: none;
+	display: none;
+	position: absolute;
+	top: 1500px;
+}
+
+.gobutton{
+	background-color: transparent;
+	border: 3px solid transparent;
+	border-radius: 50px;
+	padding: 25px;
+	margin: auto;
+	width: 80%;
+}
+
+.gobutton:hover{
+	color: rgb(238, 238, 238);
+	font-size: 28px;
+	text-shadow: 5px 5px 15px black;
+	transition: 0.1s ease-in;
+}
+
+.cardover li{
+	text-align: left;
+}
+
+.card:hover .cardover{
+	background-color: rgba(0, 128, 0, 0.9);
+	width: 100%;
+	height: 800px;
+	position: absolute;
+	top: 0;
+	padding: 20px;
+	color: white;
+	cursor: pointer;
+}
+
+.card:hover .cardover li{
+	text-align: left;
+	margin-bottom: 7px;
+}
+
+.card:hover .gobtn{
+	color: white;
+	display: block;
+	position: static;
+	transition: 0.3s ease-in;
+}
+
+.card:hover .gobutton{
+	background-color: rgba(40, 150, 40, 0.9);
+	border: 3px solid white;
+	transition: 0.4s ease-in;
+}
+
+/*Cards*/
+
+/*Footer*/
+.footer{
+	background-color: #011222;
+	color: white;
+	font-size: 20px;
+	padding: 25px;
+	text-align: center;
+	clear: both;
+}
+
+/*Footer*/
+
+.relative1{
+	position: relative;
+	left: 25px;
+}
+
+@media screen AND (max-width:1000px) {
+	.cardtxt{
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 1.6vw;
+	}
+
+	.cardover h2{
+		font-size: 16px;
+	}
+}
+
+@media screen AND (max-width:900px) {
+	.card{
+		width: 46%;
+	}
+	
+	.cardtxt{
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 2.4vw;
+	}
+
+	.cardover h2{
+		font-size: 2.7vw;
+	}
+}
+
+@media screen AND (max-width:613px){
+	h1{
+		font-size: 25px;
+	}
+}
+
+@media screen AND (max-width:520px) {
+	.card{
+		width: 95%;
+	}
+	
+	.cardtxt{
+		position: absolute;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		font-size: 5vw;
+	}
+
+	.cardover h2{
+		font-size: 5vw;
+	}
+	
+	.logo{
+		font-size: 6vw;
+		text-align: right;
+	}
+}
+
+@media screen AND (max-width:350px){
+	h1{
+		width: 80%;
+	}
+
+	.cardover h2{
+		font-size: 5.3vw;
+	}
+
+	.gobutton{
+		width: 90%;
+	}
+}
