@@ -283,3 +283,10 @@ h1{
 		width: 90%;
 	}
 }
+
+@media screen AND (max-width:250px){
+	h1{
+		width: 90%;
+		font-size: 20px;
+	}
+}
