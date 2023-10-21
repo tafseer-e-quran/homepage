@@ -11,6 +11,10 @@ body{
 
 * {box-sizing: border-box}
 
+.webcountertodisplay{
+	display: none;
+}
+
 /*Navigation Bar
 .hnavbar{
 	background-color: transparent;
